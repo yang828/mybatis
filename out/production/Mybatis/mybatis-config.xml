@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--属性 -->
+    <properties resource="config.properties">
+        <property name="username" value="sa"/>
+        <property name="password" value="123456"/>
+    </properties>
+    <settings>
+
+    </settings>
+    <!--类型别名 -->
+    <typeAliases>
+
+    </typeAliases>
+    <!--类型处理器 -->
+    <typeHandlers>
+
+    </typeHandlers>
+    <!--对象工厂 -->
+    <objectFactory>
+
+    </objectFactory>
+    <!--插件 -->
+    <plugins>
+
+    </plugins>
+    <!--环境配置 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager>
+
+            </transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--数据库厂商标识 -->
+    <databaseIdProvider>
+
+    </databaseIdProvider>
+    <!--映射器 -->
+    <mappers>
+        <mapper resource="Mapper/StudentMapper.xml"/>
+    </mappers>
+</configuration>

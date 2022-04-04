@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <!--属性 -->
-    <properties resource="config.properties">
+    <properties resource="configuration.properties">
         <property name="username" value="sa"/>
         <property name="password" value="123456"/>
     </properties>
